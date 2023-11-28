@@ -4,14 +4,16 @@ Typescript Challenge for medior/senior
 
 > Build a warehouse packaging line.
 
-Based on the `orders` list, build packages.
+Build packages based on the `orders` list found on the API.
 
 - Build complete packages of required articles
     - Connect an invoice with total price & articles
-- Produce a restocking list for items that will run out of stock soon
-- Throw helpful warnings when orders are unable to be executed
-- No need to build an interface, output in console is fine.
-- Bonus: unit test your code with `jest`.
+- Produce a restocking list for items that will run out of stock soon.
+- Throw helpful warnings when orders are unable to be executed.
+- 💥BONUS💥: unit test your code with `jest`.
+
+No need to build an interface, output in console is fine.
+
 
 ## Setting up
 
