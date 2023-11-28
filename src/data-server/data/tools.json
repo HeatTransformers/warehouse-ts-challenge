@@ -1,0 +1,44 @@
+[
+  {
+    "id": "gh-3209452",
+    "productCode": "HAMMER",
+    "name": "Hammer, 5 lbs",
+    "description": "",
+    "stock": 12
+  },
+  {
+    "id": "gnifjdjg-238yef0ijn-dni923",
+    "productCode": "DRILL",
+    "name": "Hand drill",
+    "description": "Light hand drill",
+    "stock": 33
+  },
+  {
+    "id": "fgni023-vne245-032mnc23o42",
+    "productCode": "MAKITA-CRG-12V",
+    "name": "Makita charger, 12V",
+    "description": "",
+    "stock": 4
+  },
+  {
+    "id": "vmn2430490m-fmn320-ckme-394j32",
+    "productCode": "MAKITA-BATT-12V",
+    "name": "Makita battery block, 12V",
+    "description": "",
+    "stock": 34
+  },
+  {
+    "id": "feihrun20-vnru3959-ncei200",
+    "productCode": "MAKITA-BATT-14V",
+    "name": "Makita battery block, 14V",
+    "description": "",
+    "stock": 22
+  },
+  {
+    "id": "ldr-fm1032o04-fj1n2031",
+    "productCode": "LAD",
+    "name": "Ladder 5m",
+    "description": "5 meter high ladder",
+    "stock": 2
+  }
+]

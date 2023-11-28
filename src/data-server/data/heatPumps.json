@@ -1,0 +1,34 @@
+[
+  {
+    "id": "934024-fn5re2-4nf023942",
+    "productCode": "ACE4",
+    "name": "Ace 4",
+    "description": "Most popular heat pump in the Netherlands",
+    "stock": 12,
+    "unitPrice": 6778
+  },
+  {
+    "id": "503124-fs-42343-fdsmt31432-0e",
+    "productCode": "ACE6",
+    "name": "Remeha Ace 6kW",
+    "description": "Slightly less popular heat pump in the Netherlands",
+    "stock": 1,
+    "unitPrice": 7778
+  },
+  {
+    "id": "gj02394ijk2-gvdfjng3-btdiu9fvhu2345-dds04i2",
+    "productCode": "Midea6",
+    "name": "Midea 6",
+    "description": null,
+    "stock": 6,
+    "unitPrice": 6100
+  },
+  {
+    "id": "gn0234i-fvb32559y78tr83h-cnb5y498eff-nf230",
+    "productCode": "BOSCH8",
+    "name": "Nefit-Bosch 8kW Monobloc",
+    "description": "Most popular heat pump i the Netherlands",
+    "stock": null,
+    "unitPrice": 8120
+  }
+]

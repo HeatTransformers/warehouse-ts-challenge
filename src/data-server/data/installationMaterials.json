@@ -1,0 +1,34 @@
+[
+  {
+    "id": "rj30rfi-c230cu-fh3039iv-12c",
+    "productCode": "KML-3.4",
+    "name": "Tubing, per m",
+    "description": "f-gas tube 3.4",
+    "stock": 1455,
+    "unitPrice": 1.99
+  },
+  {
+    "id": "rj30rfi-64352-fh3039iv-fdst231",
+    "productCode": "KML-2.8",
+    "name": "Tubing, per m",
+    "description": "f-gas tube 2.8",
+    "stock": 1455,
+    "unitPrice": 1.60
+  },
+  {
+    "id": "g02394i-f123323-234fvkm43id-12321",
+    "productCode": "VA1/4",
+    "name": "Vibration absorbers, 1/4",
+    "description": "Vibration absorbers, 1/4",
+    "stock": 33,
+    "unitPrice": 4.78
+  },
+  {
+    "id": "gj023i94-fnreindwj-49f9j-rhnc0i1",
+    "productCode": "M5",
+    "name": "Moer 6mm",
+    "description": "Mand",
+    "stock": 7388,
+    "unitPrice": 0.15
+  }
+]
