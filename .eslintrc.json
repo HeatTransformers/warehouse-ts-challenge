@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "rules": {
+    "no-console": "off"
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
