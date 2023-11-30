@@ -17,7 +17,7 @@ Build packages based on the `orders` list found on the API.
 - Solution must be in Typescript
 - You can make use of the powerful JS/TS ecosystem
 - No need to build an interface, output in console is fine
-
+- Fork this repo, do your thing, and push to your public Github repo.
 
 ## Setting up
 
