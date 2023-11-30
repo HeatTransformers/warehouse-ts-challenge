@@ -28,7 +28,7 @@
     "productCode": "BOSCH8",
     "name": "Nefit-Bosch 8kW Monobloc",
     "description": "Most popular heat pump i the Netherlands",
-    "stock": null,
+    "stock": 0,
     "unitPrice": 8120
   }
 ]
