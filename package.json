@@ -7,8 +7,8 @@
     "test": "jest --passWithNoTests",
     "start": "ts-node ./src/index.ts",
     "serve": "json-server ./src/data-server/index.js",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint": "echo \"Not implemented yet\" && exit 1",
+    "lint:fix": "echo \"Not implemented yet\" && exit 1"
   },
   "author": "",
   "license": "UNLICENSED",
