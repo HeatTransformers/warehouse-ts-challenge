@@ -7,6 +7,5 @@ module.exports = () => ({
   heatPumps,
   installationMaterials,
   tools,
-
   orders,
 });
