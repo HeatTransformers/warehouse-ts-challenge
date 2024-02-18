@@ -1,3 +1,10 @@
-import { exampleFunction } from './example';
+import { Api } from "./api";
 
-console.log(exampleFunction());
+async function main() {
+  const client = new Api();
+  const products = await client.fetchAllProducts();
+
+  console.log(products);
+}
+
+main();
