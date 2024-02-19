@@ -1,10 +1,26 @@
 import { Api } from "./api";
+import { OrderService } from "./order";
+import { ProductsStore } from "./product/store";
 
 async function main() {
-  const client = new Api();
-  const products = await client.fetchAllProducts();
+  const api = new Api();
+  const store = new ProductsStore(api);
 
-  console.log(products);
+  const [orders] = await Promise.all([
+    api.fetchOrders(),
+    store.fetchProducts(),
+  ]);
+
+  const orderService = new OrderService(store, orders);
+
+  orderService.processOrders();
+  store.getRestockList().forEach((product) => {
+    console.log(
+      `Product ${product.name} (${product.productCode}) needs restock`
+    );
+  });
 }
 
-main();
+main().catch((error) => {
+  console.error("Error processing orders", error);
+});

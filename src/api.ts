@@ -1,21 +1,11 @@
-export type OrderDTO = {
-  id: String;
-  articles: Array<string>;
-  installationDate: string;
-};
-
-export type ProductDTO = {
-  id: string;
-  productCode: string;
-  name: string;
-  description: string;
-  stock: number;
-  unitPrice?: number;
-};
-
-export async function getJSON<T>(url: string): Promise<T> {
-  return fetch(url).then((res) => res.json()) as unknown as T;
-}
+import { formatProductResponse, formatToolsResponse } from "./lib/formatters";
+import { getJSON } from "./lib/helpers";
+import {
+  OrderReponse,
+  ProductResponse,
+  ProductType,
+  ToolsResponse,
+} from "./lib/types";
 
 export class Api {
   private baseUrl: string;
@@ -24,46 +14,34 @@ export class Api {
     this.baseUrl = process.env.BASE_URL || "http://localhost:3000/";
   }
 
-  private async get<T>(path: string) {
-    try {
-      const response = await getJSON<T>(`${this.baseUrl}/${path}`);
-      return response;
-    } catch (error) {
-      console.error("Error fetching data", error);
-    }
+  public async fetchHeatPumps() {
+    const products = await getJSON<ProductResponse[]>(
+      this.baseUrl + "heatPumps"
+    );
+    if (!products) return [];
+
+    return formatProductResponse(products, ProductType.HeatPump);
   }
 
-  public async getHeatPumps() {
-    try {
-      const data = await this.get<ProductDTO[]>("heatPumps");
-      return data;
-    } catch (error) {
-      console.error("Error fetching heat pumps", error);
-    }
+  public async fetchInstallationMaterials() {
+    const products = await getJSON<ProductResponse[]>(
+      this.baseUrl + "installationMaterials"
+    );
+    if (!products) return [];
+
+    return formatProductResponse(products, ProductType.InstallationMaterial);
   }
 
-  public async getInstallationMaterials() {
-    const data = await this.get<ProductDTO[]>("installationMaterials");
-    return data;
+  public async fetchTools() {
+    const products = await getJSON<ToolsResponse[]>(this.baseUrl + "tools");
+    if (!products) return [];
+
+    return formatToolsResponse(products);
   }
 
-  public async getTools() {
-    const data = await this.get<ProductDTO[]>("tools");
-    return data;
-  }
+  public async fetchOrders() {
+    const orders = await getJSON<OrderReponse[]>(this.baseUrl + "orders");
 
-  public async getOrders() {
-    const data = await this.get<OrderDTO[]>("orders");
-    return data;
-  }
-
-  public async fetchAllProducts() {
-    const products = await Promise.all([
-      this.getHeatPumps(),
-      this.getInstallationMaterials(),
-      this.getTools(),
-    ]);
-
-    return products.flat();
+    return orders;
   }
 }
